@@ -5,7 +5,7 @@ from ctxintel import ContextIntel
 
 def main():
     messages = [
-        {"role": "user",      "content": "Hi, I'm Usman. I'm building a REST API."},
+        {"role": "user",      "content": "Hi, I'm John. I'm building a REST API."},
         {"role": "assistant", "content": "Great! What stack are you using?"},
         {"role": "user",      "content": "FastAPI and Python. Deploying on AWS ECS."},
         {"role": "assistant", "content": "Good choice. Any constraints?"},

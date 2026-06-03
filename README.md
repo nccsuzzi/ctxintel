@@ -24,7 +24,7 @@ from ctxintel import ContextIntel
 sdk = ContextIntel(preset="coding_assistant")
 
 messages = [
-    {"role": "user",      "content": "Hi, I'm Usman. Building a REST API."},
+    {"role": "user",      "content": "Hi, I'm John. Building a REST API."},
     {"role": "assistant", "content": "What stack are you using?"},
     {"role": "user",      "content": "FastAPI and Python. Deploying on AWS."},
     {"role": "user",      "content": "Don't use synchronous code."},

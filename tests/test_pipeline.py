@@ -27,8 +27,8 @@ class TestPipeline:
     def test_add_message_and_flush(self, tmp_path):
         """add_message + flush workflow should work correctly."""
         sdk = ContextIntel(memory_path=str(tmp_path / "mem.json"))
-        sdk.add_message("user", "Hi, my name is Usman.")
-        sdk.add_message("assistant", "Hello Usman!")
+        sdk.add_message("user", "Hi, my name is John.")
+        sdk.add_message("assistant", "Hello John!")
         sdk.add_message("user", "I prefer Python.")
         sdk.add_message("user", "Build a REST API.")
 

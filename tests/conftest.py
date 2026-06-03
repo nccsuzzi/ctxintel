@@ -11,8 +11,8 @@ def sample_messages():
     """Return 20 realistic Message objects covering diverse scenarios."""
     return [
         Message(role="system", content="You are a helpful coding assistant."),
-        Message(role="user", content="Hi, my name is Usman. I'm a backend developer."),
-        Message(role="assistant", content="Hello Usman! How can I help you today?"),
+        Message(role="user", content="Hi, my name is John. I'm a backend developer."),
+        Message(role="assistant", content="Hello John! How can I help you today?"),
         Message(role="user", content="I prefer Python for all my backend projects."),
         Message(role="assistant", content="Python is an excellent choice for backend development."),
         Message(role="user", content="I'm using FastAPI with clean architecture."),
@@ -44,8 +44,8 @@ def raw_messages():
     """Return raw message dicts (as would come from an API)."""
     return [
         {"role": "system", "content": "You are a helpful coding assistant."},
-        {"role": "user", "content": "Hi, my name is Usman."},
-        {"role": "assistant", "content": "Hello Usman!"},
+        {"role": "user", "content": "Hi, my name is John."},
+        {"role": "assistant", "content": "Hello John!"},
         {"role": "user", "content": "I prefer Python."},
         {"role": "user", "content": "Build a REST API."},
         {"role": "user", "content": "Don't use synchronous code."},
