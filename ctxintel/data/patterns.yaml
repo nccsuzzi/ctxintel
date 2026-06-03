@@ -1,0 +1,183 @@
+categories:
+
+  user_name:
+    patterns:
+      - "my name is {X}"
+      - "i am {X}"
+      - "call me {X}"
+      - "i go by {X}"
+    priority: high
+
+  user_preference:
+    patterns:
+      - "i prefer {X}"
+      - "i like {X}"
+      - "i love {X}"
+      - "i always use {X}"
+      - "my favorite {X}"
+      - "my favourite {X}"
+      - "i enjoy {X}"
+      - "i work best with {X}"
+    priority: high
+
+  task:
+    patterns:
+      - "build {X}"
+      - "create {X}"
+      - "implement {X}"
+      - "i need {X}"
+      - "i need to {X}"
+      - "i want to {X}"
+      - "we need to {X}"
+      - "fix {X}"
+      - "add {X}"
+      - "make {X}"
+      - "develop {X}"
+      - "write {X}"
+      - "design {X}"
+    priority: high
+
+  decision:
+    patterns:
+      - "decided to {X}"
+      - "we decided {X}"
+      - "going with {X}"
+      - "we will use {X}"
+      - "confirmed {X}"
+      - "agreed to {X}"
+      - "we are using {X}"
+      - "we chose {X}"
+      - "settled on {X}"
+    priority: high
+
+  constraint:
+    patterns:
+      - "don't {X}"
+      - "do not {X}"
+      - "never {X}"
+      - "avoid {X}"
+      - "must not {X}"
+      - "should not {X}"
+      - "no {X}"
+      - "without {X}"
+      - "exclude {X}"
+    priority: high
+
+  coding_language:
+    patterns:
+      - "using {X}"
+      - "written in {X}"
+      - "in {X}"
+      - "with {X}"
+    keywords:
+      - python
+      - javascript
+      - typescript
+      - go
+      - golang
+      - rust
+      - java
+      - ruby
+      - php
+      - swift
+      - kotlin
+      - c++
+      - "c#"
+      - scala
+    priority: high
+
+  framework:
+    patterns:
+      - "using {X}"
+      - "with {X}"
+      - "built on {X}"
+    keywords:
+      - flask
+      - django
+      - fastapi
+      - react
+      - vue
+      - angular
+      - nextjs
+      - express
+      - spring
+      - rails
+      - laravel
+      - svelte
+      - nuxt
+    priority: medium
+
+  cloud_provider:
+    patterns:
+      - "on {X}"
+      - "deploy to {X}"
+      - "hosted on {X}"
+      - "running on {X}"
+    keywords:
+      - aws
+      - gcp
+      - azure
+      - vercel
+      - heroku
+      - railway
+      - render
+      - digitalocean
+      - cloudflare
+    priority: medium
+
+  architecture:
+    patterns:
+      - "using {X}"
+      - "following {X}"
+      - "architecture is {X}"
+      - "structured as {X}"
+    keywords:
+      - microservices
+      - monolith
+      - serverless
+      - event-driven
+      - rest
+      - graphql
+      - grpc
+      - websockets
+      - mvc
+      - clean architecture
+    priority: medium
+
+spacy_entity_map:
+  PERSON: "person_mentioned"
+  ORG: "organization"
+  PRODUCT: "product"
+  GPE: "location"
+  LOC: "location"
+  DATE: "temporal_reference"
+  TIME: "temporal_reference"
+  MONEY: "budget_constraint"
+  PERCENT: "metric"
+
+dependency_verbs:
+  - deploy
+  - use
+  - build
+  - integrate
+  - avoid
+  - implement
+  - install
+  - configure
+  - connect
+  - migrate
+
+emphasis_signals:
+  high:
+    - "very important"
+    - "critical"
+    - "must"
+    - "always remember"
+    - "don't forget"
+    - "crucial"
+    - "essential"
+  medium:
+    - "important"
+    - "remember"
+    - "please note"
+    - "keep in mind"

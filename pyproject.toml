@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctxintel"
+version = "0.1.0"
+description = "Context Operating System for LLM Applications — local, zero-cost context intelligence"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["llm", "context", "compression", "nlp", "ai", "memory"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "scikit-learn>=1.3",
+    "nltk>=3.8",
+    "sumy>=0.11",
+    "pyyaml>=6.0",
+    "tiktoken>=0.5",
+]
+
+[project.optional-dependencies]
+spacy = ["spacy>=3.7"]
+embeddings = ["sentence-transformers>=2.2"]
+dev = ["pytest>=7.0", "pytest-cov", "black", "ruff"]
+
+[project.urls]
+Homepage = "https://github.com/nccsuzzi/ctxintel"
+Issues = "https://github.com/nccsuzzi/ctxintel/issues"
+
+[tool.setuptools.packages.find]
+include = ["ctxintel*"]
+
+[tool.setuptools.package-data]
+ctxintel = ["data/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
